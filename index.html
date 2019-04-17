@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>CV</title>
+</head>
+<body>
+  <figure>
+   <p><img src="photo.jpg" alt="my photo" width="300" height="300"></p>
+   <figcaption><strong>Photo</strong></figcaption>
+  </figure>
+  <h1>Resume:</h1>
+  <h2>Name and surname:</h2>
+  <ul class="none-marker">
+    <li>Oleg, Konyushevsky.</li>
+  </ul>
+  <h2>Contacts:</h2>
+  <ul class="contacts none-marker">
+    <li><a href="tel:+375333017089">tel.: <em>+375333017089.</em></a></li>
+    <li><a href="mailto:olegkonyushevsky@gmail.com">email: <em>olegkonyushevsky@gmail.com.</em></a></li>
+  </ul>
+  <h2 class="clear">Summary:</h2>
+  <ul>
+    <li>Learn to write good apps.</li>
+    <li>Develop.</li>
+    <li>Feel happy about what I do.</li>
+  </ul>
+  <h2>Skills:</h2>
+  <ul>
+    <li>git</li>
+    <li>html/css</li>
+    <li>js (and node)</li>
+    <li>PHP (a little bit)</li>
+    <li>sql (a little bit)</li>
+    <li>с (a little bit)</li>
+  </ul>
+  <h2>Some piece of my program:</h2>
+  <code>
+    function drawCheckMark() {<br><br>
+        &nbsp; var checkMark = document.getElementById('check_mark');<br><br>
+        &nbsp; checkMark.width = checkMark.clientWidth * window.devicePixelRatio;<br><br>
+        &nbsp; checkMark.height = checkMark.clientHeight * window.devicePixelRatio;<br><br><br>
+
+        &nbsp; var context = checkMark.getContext('2d');<br><br>
+        &nbsp; context.beginPath();<br><br>
+        &nbsp; context.lineWidth = 1.6 * window.devicePixelRatio;<br><br><br>
+
+        &nbsp; context.arc( checkMark.width / 2, checkMark.height / 2, <br><br>&nbsp; &nbsp; checkMark.height / 2 - context.lineWidth / 2, (Math.PI/180) * 0, (Math.PI/180) * 360, false );<br><br>
+
+        &nbsp; context.moveTo(checkMark.width / 3.5, checkMark.height / 2);<br><br>
+        &nbsp; context.lineTo(checkMark.width * 0.445, checkMark.height * 0.65);<br><br>
+        &nbsp; context.lineTo(checkMark.width * 0.7, checkMark.height / 2.6);<br><br><br>
+
+        &nbsp; context.strokeStyle = '#484848';<br><br><br>
+
+        &nbsp; context.stroke();<br>
+    }
+  </code>
+  <h2 class="clear">My experience is a few made sites.</h2>
+  <h2>Education:</h2>
+  <ul>
+    <li>Higher Polish School at BIP. We studied:
+      <ul class="top-li-margin">
+        <li>higher mathematics</li>
+        <li>logic</li>
+        <li>programming</li>
+        <li>statistics</li>
+        <li>I also completed a course intro to UX / UI design on cursera.</li>
+      </ul>
+    </li>
+  </ul>
+  <h2 class="bottom-indent">English level A2.</h2>
+</body>
+</html>
